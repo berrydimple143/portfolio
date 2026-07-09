@@ -20,7 +20,9 @@
     </div>          
     <?php include('./includes/front/hero.php'); ?> 
     <?php include('./includes/front/about.php'); ?>
-    <?php include('./includes/front/work.php'); ?>    
+    <?php include('./includes/front/work.php'); ?>
+    <?php include('./includes/front/experience.php'); ?>    
+    <?php include('./includes/front/contact.php'); ?>   
     <script>
         function pageLoad() {
             return {
@@ -51,6 +53,20 @@
                         description: "This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description."
                     }
                 ],          
+                experiences: [
+                    {
+                        id: 1,
+                        company: "GlobalTech Development Inc.",
+                        duration: "2011-2012",
+                        description: "I am responsible for creating, planning, developing, troubleshooting and deploying projects in shared hosting and/or in the cloud."
+                    },
+                    {
+                        id: 2,
+                        company: "AltusTech IT Solutions Corp.",
+                        duration: "2012-2015",
+                        description: "I am responsible for creating, planning, developing, troubleshooting and deploying projects in shared hosting and/or in the cloud."
+                    }
+                ],
                 showMobile() {
                     this.showMobileMenu = !this.showMobileMenu;
                 },                
