@@ -1,0 +1,22 @@
+.text-scramble__content {
+  max-width: 40ch;
+  font-size: max(1rem, min(4.69579vw + 0.665049rem, 2rem));
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin-top: max(1rem, min(1.0712vw + 0.51456rem, 1rem));
+  padding-bottom: 1.1em;
+  position: relative;
+}
+
+.text-scramble__text {
+  bottom: 0; 
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.text-scramble__text span {
+  word-break: break-word;
+}
