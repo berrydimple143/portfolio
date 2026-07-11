@@ -10,7 +10,7 @@
 		public static function connect() {
 			if(!self::$pdo) {
 				try {
-					self::$pdo = new PDO("mysql:host=localhost;dbname=sdsg;", "root", "");
+					self::$pdo = new PDO("mysql:host=localhost;dbname=portfolio;", "root", "");
 				} catch(PDOException $e) {
 					die('Database connection error.'. $e->getMessage());
 				}

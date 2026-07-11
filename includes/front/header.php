@@ -12,7 +12,7 @@
     <li class="p-5">
         <a class="flex items-center justify-center space-x-2" href="">
             <?php includeWithArgs('./icons/work.php', ['color' => '#000']); ?>
-            <span>Work</span> 
+            <span>Projects</span> 
         </a>
     </li>
     <li class="p-5">
@@ -53,7 +53,7 @@
         <li class="p-5">
             <a class="flex items-center justify-center space-x-2" href="">
                 <?php includeWithArgs('./icons/work.php', ['color' => '#fff']); ?>
-                <span>Work</span> 
+                <span>Projects</span> 
             </a>
         </li>
         <li class="p-5">
