@@ -6,7 +6,7 @@ import { TextPlugin } from "../node_modules/gsap/TextPlugin.js";
 
 gsap.registerPlugin(ScrambleTextPlugin, SplitText, TextPlugin);
 
-window.Alpine = Alpine;
 window.gsap = gsap;
+window.Alpine = Alpine;
 
 Alpine.start ();

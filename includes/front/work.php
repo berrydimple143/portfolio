@@ -1,4 +1,4 @@
-<section class="bg-slate-50 py-16 px-4 sm:px-6 lg:px-8 dark:bg-slate-900">
+<section id="projectPage" class="bg-slate-50 py-16 px-4 sm:px-6 lg:px-8 dark:bg-slate-900">
   <div class="max-w-7xl mx-auto">
     
     <!-- Section Header -->

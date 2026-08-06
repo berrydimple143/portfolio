@@ -1,4 +1,4 @@
-<section class="bg-slate-900 py-24 text-slate-100">
+<section id="experiencePage" class="bg-slate-900 py-24 text-slate-100">
   <div class="mx-auto max-w-4xl px-6">
     <!-- Header -->
     <div class="text-center mb-16">

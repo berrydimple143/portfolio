@@ -6,7 +6,7 @@
                     <li class="flex items-center justify-center">                        
                         <span class="text-lg text-white">Welcome to the dashboard, redirecting please wait ...</span>
                         <div role="status">
-                            <?php include('../../icons/loading.php'); ?>
+                            <?php include('../../images/icons/loading.php'); ?>
                             <span class="sr-only">Loading...</span>
                         </div>
                     </li>

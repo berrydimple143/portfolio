@@ -2,10 +2,6 @@
 	namespace App\Controllers;
 
 	use App\Models\User;
-	use App\Models\Barangay;
-	use App\Models\District;
-	use App\Models\City;
-	use App\Models\Province;
 	use DateTime;
 
 	class UsersController {
