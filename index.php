@@ -15,7 +15,7 @@
     </style>
 </head>
 <body x-data="pageLoad()">
-    <div class="text-black flex items-center justify-between max-w-[1920px] mx-auto h-24">        
+    <div class="text-white flex items-center justify-between max-w-[1920px] mx-auto h-16 border-b border-gray-300 bg-gradient-to-r from-blue-200 via-blue-500 to-blue-400">        
         <?php include('./includes/front/header.php'); ?>      
     </div>          
     <?php include('./includes/front/hero.php'); ?> 

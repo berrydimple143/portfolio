@@ -33,6 +33,7 @@
                 <?php include('../../includes/admin/pages/about.php'); ?>
                 <?php include('../../includes/admin/pages/experiences.php'); ?>
                 <?php include('../../includes/admin/pages/technologies.php'); ?>
+                <?php include('../../includes/admin/pages/technology_form.php'); ?>
                 <?php include('../../includes/admin/pages/contact.php'); ?>
                 <?php include('../../includes/admin/pages/messages.php'); ?>
               </div>
@@ -65,6 +66,9 @@
                     uploadUrl: '../../api/admin/upload.php',
                     projects: [],
                     experiences: [],
+                    technologies: [],
+                    techname: '',
+                    techdescription: '',
                     
                     checkAuth() {
                         let logged = sessionStorage.getItem("logged");
@@ -202,6 +206,39 @@
                       }
                     },   
                     async submitProject() {
+                      let id = 2;
+                      if(this.mode == 'edit') { id = this.projectId; }
+                      if(!this.image) {
+                          alert("You must upload an image for this project.");
+                      } else {
+                          try {
+                              let response = await fetch(this.projectUrl, {
+                                  method: 'POST',
+                                  headers: {'Content-Type': 'application/json'},
+                                  body: JSON.stringify({ 
+                                      id: id,
+                                      status: 1,
+                                      title: this.title,
+                                      code: this.code,
+                                      technology: this.technology,
+                                      image: this.image,
+                                      description: this.description,
+                                      mode: this.mode
+                                  })
+                              });
+                              await response.json();
+                          } catch(error) {
+                          console.error('Error fetching data:', error);
+                          } finally {
+                          this.initProjects();                        
+                          setTimeout(() => {
+                              this.page = 'projects';
+                              this.clearForm();
+                          }, 500);
+                          }
+                      }
+                    },
+                    async submitTechnology() {
                       let id = 2;
                       if(this.mode == 'edit') { id = this.projectId; }
                       if(!this.image) {

@@ -48,7 +48,7 @@
             <span> F </span>
         </button>
         </div>
-        <button @click.prevent="page = 'project_form'"
+        <button @click.prevent="page = 'technology_form'"
             class="inline-flex items-center gap-2 rounded-lg border border-blue-500 bg-gradient-to-t from-blue-300 via-blue-400 to-blue-300 px-4 py-2.5 text-theme-sm font-medium text-gray-100 shadow-theme-xs hover:text-green-300 dark:border-gray-700 dark:bg-gray-800 dark:text-green-300 dark:hover:bg-white/[0.03] dark:hover:text-green-300"
         >
             ADD TECHNOLOGY
@@ -64,7 +64,7 @@
                 <th class="py-3">
                     <div class="flex items-center">
                     <p>
-                        Title
+                        Name
                     </p>
                     </div>
                 </th>
@@ -74,14 +74,7 @@
                         Description
                     </p>
                     </div>
-                </th class="py-3">
-                <th class="py-3">
-                    <div class="flex items-center">
-                    <p>
-                        Technology
-                    </p>
-                    </div>
-                </th>
+                </th class="py-3">                
                 <th class="py-3">
                     <div class="flex items-center justify-center col-span-2">
                     <p>
@@ -94,7 +87,7 @@
         <!-- table header end -->
 
         <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
-            <template x-for="(prj, index) in projects" :key="prj.id">
+            <template x-for="(prj, index) in technologies" :key="prj.id">
                 <tr class="text-sm text-gray-100 text-theme-sm dark:text-white/90">
                     <td class="py-2">
                         <div class="flex items-center gap-3">
@@ -182,7 +175,7 @@
                     </td>
                 </tr>
             </template>            
-            <template x-if="projects.length === 0">
+            <template x-if="technologies.length === 0">
                 <tr class="border-b border-gray-200">
                     <td colspan="4" class="text-center text-gray-100">
                         No data found yet ...
